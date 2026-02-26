@@ -243,5 +243,5 @@ MIT
 
 ---
 
-**Last Updated**: 2026-02-24
+**Last Updated**: 2026-02-26
 **Status**: 🚧 準備中
