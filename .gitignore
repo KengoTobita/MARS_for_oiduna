@@ -26,6 +26,10 @@ Thumbs.db
 # Test coverage
 coverage/
 
+# Pencil temporary files
+*.ep~
+*.ep.bak
+
 # Logs
 *.log
 npm-debug.log*
