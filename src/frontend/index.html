@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARS for Oiduna</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Monaco Editor -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.52.0/min/vs/editor/editor.main.css">
+
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+  <!-- Navigation -->
+  <nav class="bg-gray-800 border-b border-gray-700">
+    <div class="px-4 py-3 flex gap-4">
+      <a href="#/live" class="px-3 py-2 rounded hover:bg-gray-700">Live</a>
+      <a href="#/studio" class="px-3 py-2 rounded hover:bg-gray-700">Studio</a>
+      <a href="#/setlist" class="px-3 py-2 rounded hover:bg-gray-700">Setlist</a>
+      <a href="#/monitor" class="px-3 py-2 rounded hover:bg-gray-700">Monitor</a>
+      <a href="#/settings" class="px-3 py-2 rounded hover:bg-gray-700">Settings</a>
+    </div>
+  </nav>
+
+  <!-- Main content (dynamically replaced by router) -->
+  <main id="app" class="h-[calc(100vh-57px)]"></main>
+
+  <!-- Monaco Editor Loader -->
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.52.0/min/vs/loader.js"></script>
+
+  <!-- Application -->
+  <script type="module" src="/main.ts"></script>
+</body>
+</html>

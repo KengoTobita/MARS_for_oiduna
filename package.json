@@ -1,0 +1,31 @@
+{
+  "name": "mars-for-oiduna",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "MARS DSL client for Oiduna livecoding engine",
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "tsx watch src/server/index.ts",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "antlr4": "antlr4ts -visitor grammar/*.g4 -o grammar/.antlr",
+    "test": "vitest",
+    "lint": "biome check .",
+    "format": "biome format --write ."
+  },
+  "dependencies": {
+    "hono": "^4.0.0",
+    "antlr4ts": "^0.5.0-alpha.4",
+    "zod": "^3.22.0",
+    "monaco-editor": "^0.52.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.5.0",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0",
+    "tsx": "^4.7.0",
+    "antlr4ts-cli": "^0.5.0-alpha.4"
+  }
+}
